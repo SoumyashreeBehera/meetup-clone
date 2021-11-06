@@ -4,8 +4,11 @@ const ProductSchema = new mongoose.Schema(
   {
     dateAndTime: { type: String, required: true },
     title: { type: String, required: true },
-    hostedBy: { type: String, required: true },
-    hostAvatar: { type: String, required: true },
+    hostedBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "user",
+      required: true,
+    },
     eventImage: { type: String },
     eventType: { type: String, required: true }, //group or event
     eventCatagory: { type: String, required: true }, //catagory like art & culture
@@ -17,8 +20,11 @@ const ProductSchema = new mongoose.Schema(
     eventLocationType: { type: String, required: true }, //online or in person
     attendees: [
       {
-        avatarImg: { type: String, required: true },
-        avatarName: { type: String, required: true },
+        avatarId: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "user",
+          required: true,
+        },
       },
     ],
   },
