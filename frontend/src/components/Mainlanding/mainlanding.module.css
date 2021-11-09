@@ -1,0 +1,62 @@
+.premain{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    z-index: 10;
+}
+.back1{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,130,246,0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+
+}
+.prehead{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.img1{
+    left: 2%;
+    top: 15%;
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+   
+}
+.img2{
+    max-width: 75%;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+    
+}
+.img3{
+    top: 0;
+    right: 0;
+    left: unset;
+    transform: unset;
+    max-width: 100%;
+    height: auto;
+  
+
+}
+.main{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: column;
+}
