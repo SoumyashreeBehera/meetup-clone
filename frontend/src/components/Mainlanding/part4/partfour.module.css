@@ -1,0 +1,124 @@
+.partfour_1{
+    z-index: 0;
+    width: 100%;
+    position: relative;
+}
+
+.partfour_2{
+    max-width: 1120px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+    margin: auto;
+}
+
+.partfour_3{
+    min-height: 400px;
+    padding-top: 5 rem ;
+   padding-bottom: 5rem;
+   margin-bottom: 14rem;
+   width: 100%;
+   position: relative;
+}
+
+.partfour_4{
+    margin-bottom: 2.5 rem ;
+}
+
+.partfour_4_h{
+    padding: 0 210px;
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+.partfour_5{
+    max-width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-direction: row;
+}
+
+.partfour_5_1{
+    text-decoration: none;
+}
+
+.partfour_5_2{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+}
+.partfour_5_img{
+   
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    
+}
+
+.partfour_5_left{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.partfour_5_left_1{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+}
+.partfour_5_left_1_img{
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+   
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.partfour_5_right{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+.partfour_5_right_1{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+}
+.partfour_5_right_1_img{
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+   
+    
+    top: 0;
+}

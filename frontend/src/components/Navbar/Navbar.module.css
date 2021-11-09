@@ -1,0 +1,76 @@
+.header{
+    z-index: 20;
+    top: 0;
+    margin-bottom: 2.5rem;
+    box-sizing: border-box;
+    border: 0 solid;
+}
+.subhead{
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.px6{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.px7{
+    height: 64px;
+    overflow: visible;
+    transition-timing-function: linear;
+    transition-property: all;
+    transition-duration: .15s;
+}
+.mainpart{
+    display: block
+}
+.mainpart1{
+    min-height: 64px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+.homepagelink{
+    padding-left: 1.5 rem ;
+    color: inherit;
+    text-decoration: inherit;
+}
+.image{
+    display: block;
+    vertical-align: middle;
+    height: 34px;
+}
+.loginsignup{
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem* calc(1 - var(--tw-space-x-reverse)));
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+.loginlink{
+    --tw-text-opacity: 1;
+    color: rgba(33,33,33,var(--tw-text-opacity));
+    font-size: .875rem;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 500;
+    text-decoration: none;
+
+
+}
+.loginlink:hover{
+    color: #0070f3;
+}
