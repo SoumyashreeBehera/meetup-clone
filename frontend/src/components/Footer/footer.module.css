@@ -1,0 +1,175 @@
+.footer_main{
+    z-index: 0;
+    --tw-text-opacity: 1;
+    color: rgba(246,247,248,var(--tw-text-opacity));
+    padding-top: 1rem;
+    margin-top: 0;
+    --tw-bg-opacity: 1;
+    background-color: rgba(33,33,33,var(--tw-bg-opacity));
+}
+
+.footer_main_1{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1120px;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer_main_part1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    justify-content: flex-start;
+}
+.footer_main_part1_1{
+    display: block;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+    width: 1120px;
+    height: 69px;
+
+    
+}
+.footer_main_part1_2{
+    cursor: pointer;
+    color: #fff;
+    fill: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    padding: 8px 12px;
+    outline: 2px solid transparent;
+     outline-offset: 2px;
+     margin-left: 1rem;
+     display: inline-flex;
+     border: 2px solid;
+     border-radius: 0.375rem;
+     text-decoration: none;
+}
+.footer_main_part2{
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.footer_main_part2_1{
+    width: 33.333333%;
+    margin-bottom: 0.75rem;
+}
+.footer_main_part2_1_el{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.footer_main_part2_1_el_li{
+    --tw-text-opacity: 1;
+    color: rgba(197,196,196,var(--tw-text-opacity));
+    font-weight: 400;
+    font-size: .875rem;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-decoration: none;
+    
+}
+
+.footer_main_part3{
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.footer_main_part3_h{
+    margin-bottom: 0.75rem;
+}
+.footer_main_part3_b{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+}
+.footer_main_part3_b_i{
+    text-decoration: none;
+    margin-right: 10px;
+}
+.footer_main_part3_2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.footer_main_part3_3{
+    text-decoration: none;
+}
+.footer_main_part3_4{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+}
+.footer_main_part3_4_img{
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+   
+    top: 0;
+}
+.footer_main_part4{
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+    font-size: .875rem;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    display: flex;
+    padding-top: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgba(197,196,196,var(--tw-text-opacity));
+    flex-direction: row;
+}
+.text_white{
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+}
+.t{
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+        --tw-text-opacity: 1;
+        color: rgba(197,196,196,var(--tw-text-opacity));
+        font-size: .875rem;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.text_gray3 {
+    --tw-text-opacity: 1;
+    color: rgba(217,217,217,var(--tw-text-opacity));
+    fill: currentColor;
+}

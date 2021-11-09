@@ -1,0 +1,53 @@
+.category_div {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 3.5rem auto;
+}
+
+.category_div > .slider {
+	height: 24rem;
+	padding: 1rem;
+}
+
+.category_header {
+	display: flex;
+	flex-direction: column;
+	color: #414146;
+}
+
+.category_header > h2 {
+	font-size: 2.4rem;
+	/* color: #414146; */
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: 'CamphorBold';
+	/* padding-bottom: 30px; */
+}
+
+.category_header > p {
+	font-size: 1.6rem;
+	line-height: 1.29;
+	margin-top: 5px 0 0;
+	/* padding-top: 2rem; */
+	/* padding-bottom: 12px; */
+	/* margin-top: -10px; */
+}
+
+.category_button {
+	margin: 0 auto;
+	max-width: 100%;
+	font-size: 14px;
+	font-weight: 700;
+	position: absolute;
+	border-radius: 8px;
+	padding: 11px 17px;
+	text-align: center;
+	color: #2d2d32;
+	border: 1px solid #979797;
+	right: 0;
+	top: 2rem;
+	cursor: pointer;
+	background-color: transparent;
+	text-decoration: none;
+}
