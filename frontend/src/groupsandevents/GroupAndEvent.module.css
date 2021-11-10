@@ -1,0 +1,25 @@
+.groundandevents_container {
+  width: 70%;
+  margin: auto;
+}
+.button_container {
+  display: flex;
+  font-size: 1.25rem;
+}
+.button_container > button {
+  margin: 10px;
+  height: 60px;
+  width: 120px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid teal;
+  border-bottom: blue;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.sorts_container {
+  display: flex;
+  margin: 10px;
+  border-bottom: 1px solid gray;
+}

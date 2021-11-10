@@ -1,0 +1,20 @@
+.select {
+  height: 60px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  width: min-content;
+  border-radius: 40px;
+  background: #f2f4f7;
+  appearance: none;
+  padding: 0.5rem 1rem;
+  overflow: scroll;
+  margin:10px;
+}
+.select > option {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 0px 20px;
+  width: 150px;
+}
