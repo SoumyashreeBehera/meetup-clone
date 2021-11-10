@@ -1,0 +1,143 @@
+.section {
+  max-width: 1120px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+input:focus {
+  outline: none !important;
+}
+
+p {
+  font-size: 16px;
+}
+i {
+  font-size: 25px;
+}
+.sectionBox {
+  width: 680px;
+}
+.paymentHeading {
+  margin-bottom: 45px;
+}
+.planDiv > h3 {
+  margin-bottom: 20px;
+}
+.planDivBox {
+  display: flex;
+}
+.planDivBox > i {
+  margin-right: 10px;
+}
+.planDivDetail > h3 {
+  margin: 0px auto;
+}
+.planDivDetail > p {
+  margin-top: 5px;
+}
+
+.previousPrice {
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+.discountDetails {
+  padding: 12px 30px;
+  border-radius: 5px;
+  background-color: #008294;
+  color: white;
+  margin-bottom: 30px;
+}
+.discountDetails > p,
+h3 {
+  margin: 5px 0px;
+}
+.promocodeInputBox {
+  display: flex;
+  flex-flow: row wrap;
+}
+.promocodeInputBox > div {
+  flex: 1;
+  height: 42px;
+  padding: 0px 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.promocodeInputBox input {
+  flex: 1;
+  font-size: 16px;
+  border: none;
+}
+.promocodeInputButton {
+  width: 108px;
+  font-size: 16px;
+  border: 1px solid #008294;
+  background-color: white;
+  color: #008294;
+  border-radius: 7px;
+  transition: all 0.2s;
+}
+
+.promocodeInputButton:hover {
+  background-color: #008294;
+  color: white;
+}
+.subdcriptionDetails {
+  padding: 10px 30px;
+  background-color: #f6f6f6;
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+.subdcriptionDetailsPoint {
+  display: flex;
+}
+.subdcriptionDetailsPoint > p {
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.subdcriptionDetailsPoint > i {
+  color: #008294;
+}
+.paymentInformationBox {
+  padding: 10px 0px;
+}
+.paymentInformationEachInput {
+  margin: 10px 0px;
+}
+.reduceMarginInput {
+  margin-right: 0px !important;
+}
+.regionBox {
+  display: flex;
+  flex-flow: row wrap;
+}
+.regionBox > label {
+  flex: 1;
+}
+.paymentPriceDetailsBox {
+  padding: 20px 0px;
+}
+.paymentPriceDetailsBox > h3 {
+  margin-bottom: 20px;
+}
+.paymentPriceDetailsPrice {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.paymentPriceDetailsPrice > h3 {
+  margin-top: 0px;
+}
+.checkoutButton {
+  width: 100%;
+  height: 42px;
+  border-radius: 5px;
+  color: white;
+  background-color: #f65858;
+  font-size: 16px;
+}
