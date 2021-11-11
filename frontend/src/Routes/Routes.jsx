@@ -4,12 +4,13 @@ import GroupCreate6thPage from "../components/GroupCreate6thPage/GroupCreate6thP
 import Mainlanding from "../components/Mainlanding/Mainlanding";
 import Navbarwrapper from "../components/Navbar/Navbarwrapper";
 import Footerwrapper from "../components/Footer/Footerwrapper";
-import PaymentPage from "../components/PaymentPage/PaymentPage";
+import Afterloginnavbar from "../components/Navbar/Afterloginnavbar";
+import PaymentPage from "../components/PaymentPage/PaymentPage"
 
 export default function Routes() {
   return (
     <div>
-      <Navbarwrapper />
+   <Navbarwrapper/>
       <Switch>
         <Route path="/" exact>
           <Mainlanding />
