@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./PaymentPage.module.css";
+import { Link } from 'react-router-dom';
 
 export default function PaymentPage() {
   return (
@@ -184,9 +185,9 @@ export default function PaymentPage() {
               <h3>$23.99</h3>
             </div>
           </div>
-          <button className={styles.checkoutButton}>
+          <Link to="/login"><button className={styles.checkoutButton}>
             Confirm subscription
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

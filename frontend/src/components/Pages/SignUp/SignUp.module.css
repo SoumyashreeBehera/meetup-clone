@@ -1,0 +1,101 @@
+.signup__meetupLogo{
+    padding-top: 15px;
+    padding-bottom: 10px; 
+    height : 70px;
+    
+}
+
+.signup_heading{
+    
+    text-align: center !important;
+    font-size: 28px;
+    line-height: 1.25;
+    color: rgba(0,0,0,.87);
+    font-weight: 600;
+    letter-spacing: -.02em;
+}
+.signup__already_member_text{
+    text-align: center !important;
+    margin: 5px;
+    color: rgba(0,0,0,.54);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+
+}
+.signup__social_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.signup__single_div{
+    padding: 14px;
+    width:410px;
+    border: 1px solid rgba(141, 129, 129, 0.26) !important;
+    border-radius: 10px;
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+}
+.signup__single_span{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.45;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.signup__email_text{
+   color :  grey;
+   text-align: center !important;
+   font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+
+@media only screen and (max-width: 600px){
+    .signup__single_span{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+ }
+
+ /* popup */
+
+ .overlay {
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(128, 122, 122, 0.7);
+  transition: opacity 5ms;
+  
+  opacity: 1;
+}
+.overlay:target {
+  visibility: hidden;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  width: 32%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 38px;
+  font-weight: 500;
+  text-decoration: none;
+  color: grey;
+}

@@ -1,0 +1,289 @@
+body {
+    font-family: 'Graphik Meetup', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.eve1 {
+    text-align: left;
+    margin-left: 340px;
+}
+
+.eve1 h1 {
+    font-size: 2.5em;
+    line-height: 2em;
+    margin-top: 17px; 
+    color: rgb(0, 0, 0);
+    font-weight: 850;
+}
+
+.eve1 h5 {
+    color: gray;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.eve1 h4 {
+    color: #333;
+    font-weight: 50;
+    margin-top: 20px;
+}
+
+.eve1 span {
+    color: rgb(0, 130, 148);
+    font-size: small;
+}
+
+.eve1 h2 {
+    color: rgb(15, 15, 15);
+    margin-top: 50px;
+   
+    font-size: xx-large;
+}
+
+.eve1_button {
+     margin: 0px 120px 30px 0px; 
+}
+.eve2_button {
+    margin: 0px 20px 0px -180px;
+    bottom: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    border-top: 1px solid rgb(224, 214, 214);
+    background-color: white;
+    padding-bottom: 20px;
+    padding: 5px 100px 20px 320px;
+}
+.eve2_back {
+    margin-top: 50px;
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+    color: grey;
+    background-color: white;
+    cursor: pointer;
+}
+.eve3_back {
+    margin-top: 50px;
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+    color: grey;
+    background-color: white;
+    cursor: pointer;
+}
+.eve3_button {
+    margin: 110px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.eve6_button button {
+    float: left;
+    margin-top: 50px;
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+    color: grey;
+    background-color: white;
+    cursor: pointer;
+}
+.eve1_button button,
+.eve2_next
+{
+    float: right;
+    margin-top: 50px;
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    background-color: rgb(246, 88, 88);
+    cursor: pointer;
+}
+
+.eve2 {
+    width: 800px;
+    margin: 20px 0px 0px 330px;
+    height: 200px;
+}
+
+.eve2>div>button {
+    margin: 10px 8px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(0, 130, 148);
+    background-color: white;
+    color:rgb(0, 130, 148);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.eve2>div>button:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.eve2_button button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.eve2_button :any-link,
+.eve1_button :any-link,
+.eve6_button {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.eve3_list {
+    text-align: left;
+    width: 600px;
+    margin: 30px 0px 30px 0px;
+    
+}
+
+
+.eve2>div>button:focus {
+    background-color: rgb(0, 130, 148);
+    color: white;
+}
+.eve6_button { 
+    bottom: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    border-top: 0.5px solid rgb(255, 248, 248);
+    background-color: white;
+    padding-bottom: 20px;
+    margin-left: 130px;
+}
+
+/* creating own group 6 page */
+
+.flexBox {
+  display: flex;
+  max-width: 1100px;
+  margin: 25px auto;
+  flex-flow: row wrap;
+}
+.firstBoxHeading {
+  margin: 0px;
+  padding: 0px;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+.flexBox > div {
+  flex: 2;
+  font-size: 19px;
+  margin: 0px 10px;
+  /* background-color: brown; */
+}
+.flexBox > div:first-child {
+  flex: 3.5;
+}
+.optionBox {
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+}
+.optionBox2 {
+  background-color: #00455d;
+  color: white;
+}
+.optionTag {
+  font-size: 16px;
+  margin: 12px 0px;
+  margin-top: 27px;
+}
+.optionHeading {
+  margin: 0px;
+  padding: 0px;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.priceTag {
+  font-size: 20px;
+  margin: 15px 0px;
+  margin-top: 22px;
+}
+.discountTag {
+  font-size: 14px;
+}
+.discountTagStrike {
+  text-decoration: line-through;
+}
+.discountTagdiffer {
+  margin-left: 10px;
+  color: black;
+  background-color: #ffad43;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+.checkoutButton {
+  width: 85%;
+  height: 42px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 15px 0px;
+  margin-bottom: 21px;
+  color: white;
+  background-color: #f65e5e;
+}
+.switch {
+  display: inline-block;
+  width: 49px;
+  height: 24px;
+  position: relative;
+  margin: 0px 20px;
+}
+.options {
+  padding: 10px;
+}
+.options1 {
+  color: white;
+}
+.options > svg {
+  width: 30px;
+  height: 20px;
+}
+.toggleBox {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.switch input {
+  visibility: hidden;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ebe7e7;
+  border-radius: 34px;
+}
+.switch input:checked + .slider {
+  background-color: #0098ab;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(25px);
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 1px;
+  border: 1px solid #d1d0d0;
+  background-color: white;
+  border-radius: 26px;
+}

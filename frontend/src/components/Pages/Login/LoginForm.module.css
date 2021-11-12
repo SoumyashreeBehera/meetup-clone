@@ -1,0 +1,175 @@
+.signup__meetupLogo{
+    padding-top: 12px;
+    padding-bottom: 8px; 
+    height : 70px;
+    
+}
+.signup__already_member_text{
+    text-align: center !important;
+    margin-top: 5px;
+    color: rgba(0,0,0,.54);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+
+}
+.signup_heading {
+   font-size: 29px;
+}
+.form__log {
+   margin-top:30px;
+   padding: 0px 20px 0px 19px;
+}
+.loginform__heading{
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: 500;
+    letter-spacing: -.02em;
+
+}
+.loginform__para{
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 500;
+
+}
+.login_underline{
+    height: 0.5px;
+    background-color: rgb(216, 216, 216);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+ .login__login_button{
+    background: #F65858;
+    border-color: transparent;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.45;
+    min-height: 36px;
+    cursor: pointer;
+    margin-top: 18px;
+ }
+ .loginform__input{
+    padding: 13px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,.12);
+    box-shadow: none;
+    max-width: 100%;
+    width: 420px;
+    margin:12px 0px ;
+ }
+ .login__label{
+    font-size: 14px;
+    font-weight: 600;
+ }
+ .login__label1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+ }
+ .login__social_div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    align-items: center;
+}
+ .login__social_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   align-items: center;
+   cursor: pointer;
+ }
+
+ .login__single_span{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.45;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: black;
+ }
+ .label_blue{
+      font-size: 14px;
+      font-weight: 500;
+      color: #0092C1;
+      cursor: pointer;
+      text-decoration: none;
+ }
+ .login__single_div{
+    padding: 10.5px;
+    width: 350px;
+    border: 1px solid rgba(141, 129, 129, 0.26) !important;
+    color: grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+ }
+ @media only screen and (max-width: 992px) {
+   
+} 
+
+@media only screen and (max-width: 600px){
+   .login__single_span{
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+   .loginform__input{
+      width: 400px;
+     
+   }
+   .Login__loginForm{
+      max-width: 460px;
+      padding: 32px 62px 16px;
+      font-size: 16px;
+      line-height: 1.45;
+      font-weight: 400;
+      color: rgba(0,0,0,.87);
+      margin: 90px auto;
+      border: 1px solid silver;
+  }
+}
+
+ /* popup */
+
+ .overlay {
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(112, 107, 107, 0.7);
+  transition: opacity 1ms;
+  opacity: 1;
+}
+.overlay:target {
+  visibility: hidden;
+  opacity: 1;
+}
+.popup {
+  margin: 0px auto;
+  padding: 12px 50px 0px 50px;
+  background: #fff;
+  border-radius: 8px;
+  width: 37%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 1ms;
+  font-size: 38px;
+  font-weight: 500;
+  text-decoration: none;
+  color: grey;
+}
