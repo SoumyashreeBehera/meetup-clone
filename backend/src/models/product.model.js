@@ -20,11 +20,9 @@ const ProductSchema = new mongoose.Schema(
     eventLocationType: { type: String, required: true }, //online or in person
     attendees: [
       {
-        avatarId: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "user",
-          required: true,
-        },
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user",
+        required: true,
       },
     ],
   },
