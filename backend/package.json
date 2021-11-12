@@ -10,8 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< Updated upstream
     "cors": "^2.8.5",
+=======
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+>>>>>>> Stashed changes
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.12"
   }
 }
