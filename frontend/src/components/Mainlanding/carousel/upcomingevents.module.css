@@ -1,0 +1,168 @@
+.card{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.card1{
+    background-clip: padding-box;
+    background-size: cover;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+    height: 350px;
+    width: 265px;
+    background-color: transparent;
+    border: none;
+}
+.card2{
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+}
+.card4{
+    --tw-bg-opacity: 1;
+    background-color: rgba(246,247,248,var(--tw-bg-opacity));
+    position: relative;
+    height: 149px;
+}
+.card_img{
+    border: 1px solid #d9d9d9;
+        border-radius: 0.5rem;
+        max-width: 100%;
+        height: auto;
+}
+.card4_2{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+.card4_3{
+    --tw-bg-opacity: 1;
+    background-color: rgba(255,255,255,var(--tw-bg-opacity));
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .75rem;
+    line-height: 1rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+    padding-left: 0.25rem;
+    padding-right: 0.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 10;
+
+}
+.card5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
+.card6{
+    overflow: hidden;
+}
+.card7{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    --tw-text-opacity: 1;
+    color: rgba(135,116,87,var(--tw-text-opacity));
+    text-transform: uppercase;
+    letter-spacing: -.025em;
+}
+.card8{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    --tw-text-opacity: 1;
+    color: rgba(33,33,33,var(--tw-text-opacity));
+    padding-bottom: 0.25rem;
+    padding-top: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.card9{
+    --tw-text-opacity: 1;
+    color: rgba(117,117,117,var(--tw-text-opacity));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: .875rem;
+    line-height: 1.25rem;
+        
+}
+.card10{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+
+}
+.card11{
+    border: 0;
+    -webkit-clip: rect(1px,1px,1px,1px);
+    clip: rect(1px,1px,1px,1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
+
+}
+.head1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.head2{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+.head3{
+    --tw-text-opacity: 1;
+    color: rgba(0,130,148);
+   
+}
+.head4{
+    border: 0;
+    -webkit-clip: rect(1px,1px,1px,1px);
+    clip: rect(1px,1px,1px,1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
+
+}
