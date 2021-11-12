@@ -8,10 +8,12 @@ import Afterloginnavbar from "../components/Navbar/Afterloginnavbar";
 import PaymentPage from "../components/PaymentPage/PaymentPage";
 import GroupAndEvent from "../components/groupsandevents/GroupAndEvent";
 
+
 export default function Routes() {
   return (
     <div>
-      <Navbarwrapper />
+   <Afterloginnavbar/>
+  
       <Switch>
         <Route path="/" exact>
           <Mainlanding />

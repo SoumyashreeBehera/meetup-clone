@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./partone.module.css"
+import Whatdoyouwant from "./Whatdoyouwant";
 
 const Partone = () => {
   return (
@@ -92,20 +93,7 @@ const Partone = () => {
           <a href="/" className={style.main3_2}>Hone your craft</a>
         </div>
       </div>
-      <div className={style.main4}>
-        <div className={style.main4_1}>
-          <h2 className={style.main4_1_h}></h2>
-          <form >
-            <div className={style.main4_1_f1}>
-              <div className={style.main4_1_f1_1}>
-               
-              </div>
-              <div></div>
-            </div>
-            <div></div>
-          </form>
-        </div>
-      </div>
+      <Whatdoyouwant/>
     </div>
     
   );

@@ -4,7 +4,7 @@
 	position: relative;
 	overflow-x: scroll;
 	overflow-y: hidden;
-	margin-top: 2rem;
+	margin-top: 0;
 	padding: 1rem 0;
 	height: auto;
 }
