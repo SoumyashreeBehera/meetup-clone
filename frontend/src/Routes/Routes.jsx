@@ -1,30 +1,32 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Switch, Route } from "react-router-dom";
 import Mainlanding from "../components/Mainlanding/Mainlanding";
-/* import Navbarwrapper from "../components/Navbar/Navbarwrapper";
-import Footerwrapper from "../components/Footer/Footerwrapper";
-import Afterloginnavbar from "../components/Navbar/Afterloginnavbar"; */
+import Navbarwrapper from "../components/Navbar/Navbarwrapper";
+// import Footerwrapper from "../components/Footer/Footerwrapper";
+import Afterloginnavbar from "../components/Navbar/Afterloginnavbar";
 import GroupAndEvent from "../components/groupsandevents/GroupAndEvent";
 
-import { EventC1 } from '../components/Pages/EventCreation/EventPage1';
-import { EventC2 } from '../components/Pages/EventCreation/EventPage2';
-import { EventC3 } from '../components/Pages/EventCreation/EventPage3';
-import { EventC4 } from '../components/Pages/EventCreation/EventPage4';
-import { EventC5 } from '../components/Pages/EventCreation/EventPage5';
-import EventC6 from '../components/Pages/EventCreation/EventPage6';
-import PaymentPage from '../components/Pages/EventCreation/PaymentPage';
-import { Login } from '../components/Pages/Login/Login';
-import { Signup } from '../components/Pages/SignUp/Signup';
-import { SignupFill } from '../components/Pages/SignUp/SignupFill';
+import { EventC1 } from "../components/Pages/EventCreation/EventPage1";
+import { EventC2 } from "../components/Pages/EventCreation/EventPage2";
+import { EventC3 } from "../components/Pages/EventCreation/EventPage3";
+import { EventC4 } from "../components/Pages/EventCreation/EventPage4";
+import { EventC5 } from "../components/Pages/EventCreation/EventPage5";
+import EventC6 from "../components/Pages/EventCreation/EventPage6";
+import PaymentPage from "../components/Pages/EventCreation/PaymentPage";
+import { Login } from "../components/Pages/Login/Login";
+import { Signup } from "../components/Pages/SignUp/Signup";
+import { SignupFill } from "../components/Pages/SignUp/SignupFill";
+// import MyProfile from "../components/profile/MyProfile";
+import { AuthContext } from "../Context/AuthContextProvider";
 
 export default function Routes() {
+  const { token } = useContext(AuthContext);
+
   return (
     <div>
-   {/* <Afterloginnavbar/> */}
-  
-      {/* <Navbarwrapper /> */}
       <Switch>
         <Route path="/" exact>
+          {token === "" ? <Navbarwrapper /> : <Afterloginnavbar />}
           <Mainlanding />
         </Route>
         <Route path="/login">
@@ -60,9 +62,12 @@ export default function Routes() {
         <Route path="/groupAndEvnet">
           <GroupAndEvent />
         </Route>
+        {/* <Route path="/profile">
+          {token === "" ? <Navbarwrapper /> : <Afterloginnavbar />}
+          <MyProfile />
+        </Route> */}
       </Switch>
       {/* <Footerwrapper /> */}
-
     </div>
   );
 }

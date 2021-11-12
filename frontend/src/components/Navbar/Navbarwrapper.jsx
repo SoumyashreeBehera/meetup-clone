@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import style from "./Navbar.module.css";
 
@@ -26,12 +27,16 @@ const Navbarwrapper = () => {
                 </a>
               </div>
               <div className={style.loginsignup}>
-                <a href="/" className={style.loginlink} style={{alignItems:"flex-start"}}>
+                <Link
+                  to="/login"
+                  className={style.loginlink}
+                  style={{ alignItems: "flex-start" }}
+                >
                   Log in
-                </a>
-                <a href="/" className={style.loginlink}>
+                </Link>
+                <Link to="/signup" className={style.loginlink}>
                   Sign up
-                </a>
+                </Link>
               </div>
             </div>
           </div>
