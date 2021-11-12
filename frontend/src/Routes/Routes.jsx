@@ -5,12 +5,13 @@ import Mainlanding from "../components/Mainlanding/Mainlanding";
 import Navbarwrapper from "../components/Navbar/Navbarwrapper";
 import Footerwrapper from "../components/Footer/Footerwrapper";
 import Afterloginnavbar from "../components/Navbar/Afterloginnavbar";
-import PaymentPage from "../components/PaymentPage/PaymentPage"
+import PaymentPage from "../components/PaymentPage/PaymentPage";
+import GroupAndEvent from "../components/groupsandevents/GroupAndEvent";
 
 export default function Routes() {
   return (
     <div>
-   <Navbarwrapper/>
+      <Navbarwrapper />
       <Switch>
         <Route path="/" exact>
           <Mainlanding />
@@ -20,6 +21,9 @@ export default function Routes() {
         </Route>
         <Route path="/PaymentPage">
           <PaymentPage />
+        </Route>
+        <Route path="/groupAndEvnet">
+          <GroupAndEvent />
         </Route>
       </Switch>
       <Footerwrapper />

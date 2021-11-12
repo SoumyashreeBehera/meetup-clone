@@ -1,0 +1,93 @@
+.groundandevents_container {
+  width: 70%;
+  max-width: 993px;
+  margin: 0px auto;
+  padding-bottom: 20px;
+}
+.button_container {
+  display: flex;
+  font-size: 1.25rem;
+  /* background-color: brown; */
+}
+.button_container > div {
+  margin: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+.makeItFocus {
+  color: #008294;
+  border-bottom: 5px solid #008294;
+}
+
+.filterBoxes {
+  display: flex;
+}
+.boxsec {
+  cursor: pointer;
+  position: relative;
+  margin-right: 20px;
+}
+.boxsecHeading {
+  display: flex;
+  min-width: 100px;
+  background-color: #f6f7f8;
+  padding: 10px 15px;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+.boxsecHeading > div {
+  margin-right: 10px;
+}
+.dayColor {
+  background-color: #008294;
+  color: white;
+}
+.typeColor {
+  background-color: #008294;
+  color: white;
+}
+.dropdown {
+  display: none;
+  box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+  background-color: #ffffff;
+  position: absolute;
+  top: 60px;
+  width: 130px;
+  text-align: center;
+  padding: 15px 0px;
+  z-index: 10;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+.displayDropDown {
+  display: block;
+  cursor: pointer;
+}
+.dropdown > div {
+  padding: 5px 0px;
+}
+.contentSectionBox {
+  max-width: 993px;
+  margin: 0px auto;
+}
+.contentSection {
+  max-width: 700px;
+}
+.eachContentBox {
+  padding: 15px 0px;
+  border-top: 1px solid gray;
+}
+.eachContentBoxDetailSection {
+  display: flex;
+}
+
+.eachContentBoxImage {
+  width: 25%;
+  margin-right: 10px;
+}
+.eachContentBoxImage > img {
+  width: 100%;
+  border-radius: 7px;
+}
