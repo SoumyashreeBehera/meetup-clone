@@ -11,11 +11,12 @@ This project is a complete clone UI of the Meetup website with the functionaliti
     <li>To start the server :</li>
     <ul>
       <li>cd backend.</li>
-      <li>Execute the command <b>npm install</b> <b>npm run server </b> in the terminal.</li>
+      <li>Execute the command <br /> <b>npm install</b> to install the libraries and frame works we have used. <br /> <b>npm run server </b> to run server <br /> in the terminal.</li>
     </ul>
     <li>To execute the frontend:</li>
     <ul>
-      <li>Execute the command <b>npm start</b> in the terminal.</li>
+      <li>Execute the command: <br /> <b>cd frontend</b> -> <b>npm install</b> to install the dependencies <br/> <b>npm start</b> in the terminal.</li>
+      <li>All set enjoy user experience.</li>
       </ul>
   </ul>
 </ul>
