@@ -113,7 +113,7 @@ const LoginForm = () => {
       </div>
     </div>
   ) : (
-    <Redirect to="/profile" />
+    <Redirect to="/" />
   );
 };
 

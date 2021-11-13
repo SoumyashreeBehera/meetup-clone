@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { loadData, postData } from "../../utils/fetchData";
+import React, { useState, useEffect, useContext } from "react";
+import { loadData, getSIngleData } from "../../utils/fetchData";
 import styles from "./GroupAndEvent.module.css";
+import { AuthContext } from "../../Context/AuthContextProvider";
+import { Redirect } from "react-router";
 
 let dummy = {
   catagory: "",
@@ -24,8 +26,10 @@ export default function GroupAndEvent() {
   const [showCatagory, setShowCatagory] = useState(false);
   const [showRelevance, setShowRelevance] = useState(false);
   const [showEvent, setShowEvent] = useState("event");
-  const [getData, setGetData] = useState({ eventType: showEvent });
+  const [getData, setGetData] = useState({ eventType: "event" });
   const [data, setData] = useState([]);
+
+  const { setEvent, event } = useContext(AuthContext);
 
   function changeEToG(ev) {
     setShowEvent(ev);
@@ -60,16 +64,25 @@ export default function GroupAndEvent() {
   function changeGroupDistanceColor(e) {
     setColorGroup({ ...colorGroup, distance: e });
   }
+
+  const handleEachEvent = async (id) => {
+    let data = await getSIngleData(id);
+    setEvent(data);
+  };
+
   useEffect(() => {
     let fun = async () => {
+      setEvent({});
       let res = await loadData(getData);
-      console.log(res);
       setData(res);
+      console.log(event);
     };
     fun();
   }, [getData]);
 
-  return (
+  return event.data !== undefined ? (
+    <Redirect to="/detailsPage" />
+  ) : (
     <div>
       <div className={styles.groundandevents_container}>
         <div className={styles.button_container}>
@@ -453,16 +466,17 @@ export default function GroupAndEvent() {
       <div className={styles.contentSectionBox}>
         <div className={styles.contentSection}>
           {data.map((el) => (
-            <div className={styles.eachContentBox}>
-              <div className={styles.eachContentBoxDetailSection}>
+            <div key={el._id} className={styles.eachContentBox}>
+              <div
+                onClick={() => handleEachEvent(el._id)}
+                className={styles.eachContentBoxDetailSection}
+              >
                 <div className={styles.eachContentBoxImage}>
                   <img src={el.eventImage} alt="eventImage" />
                 </div>
                 <div className={styles.eachContentBoxDetailDiv}>
                   <div className={styles.dateAndTime}>{el.dateAndTime}</div>
-                  <h3 className={styles.clubName}>
-                    {el.groupDetail.groupName}
-                  </h3>
+                  <h3 className={styles.clubName}>{el.title}</h3>
                   <div className={styles.clubPlace}>
                     {el.groupDetail.groupName}
                   </div>

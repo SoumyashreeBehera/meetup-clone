@@ -75,7 +75,7 @@ const Afterloginnavbar = () => {
                 </div>
               </div>
               <div className={style.header_5_1_form_7}>
-                <Link to="/" className={style.header_5_1_form_8}>
+                <Link to="/start" className={style.header_5_1_form_8}>
                   Start a new group - 30% off!
                 </Link>
                 <Link to="/" className={style.header_5_1_form_9}>

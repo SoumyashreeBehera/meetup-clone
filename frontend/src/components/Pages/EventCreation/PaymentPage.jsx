@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./PaymentPage.module.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Context/AuthContextProvider";
+import { Redirect } from "react-router";
+import { postData } from "../../../utils/fetchData";
 
 export default function PaymentPage() {
+  const { createEventData } = useContext(AuthContext);
+
+  const hanlePostGroup = async () => {
+    let data = await postData(createEventData);
+    console.log(data);
+  };
   return (
     <div>
       <div className={styles.section}>
@@ -185,9 +194,14 @@ export default function PaymentPage() {
               <h3>$23.99</h3>
             </div>
           </div>
-          <Link to="/login"><button className={styles.checkoutButton}>
-            Confirm subscription
-          </button></Link>
+          <Link to="/login">
+            <button
+              onClick={() => hanlePostGroup()}
+              className={styles.checkoutButton}
+            >
+              Confirm subscription
+            </button>
+          </Link>
         </div>
       </div>
     </div>
