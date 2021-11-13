@@ -4,6 +4,7 @@ import Styles from "./SignUpForm.module.css";
 import Recaptcha from "react-recaptcha";
 import { register } from "../../../utils/fetchData";
 import { AuthContext } from "../../../Context/AuthContextProvider";
+import { Redirect } from "react-router";
 
 const SignUpEmailForm = () => {
   const [name, setName] = useState("");
@@ -12,7 +13,7 @@ const SignUpEmailForm = () => {
   const [location, setLocation] = useState("");
   // const [userData, setUserData] = useState({});
 
-  const { setUser, setToken, user } = useContext(AuthContext);
+  const { setUser, setToken, user, token } = useContext(AuthContext);
 
   const handleFormData = async () => {
     const data = {
@@ -24,10 +25,9 @@ const SignUpEmailForm = () => {
     let userToken = await register(data);
     setUser(userToken.user);
     setToken(userToken.token);
-    console.log(user);
     // setUserData(userToken);
   };
-  return (
+  return token === "" ? (
     <div>
       <div className={Styles.overlay}></div>
       <div className={Styles.popup}>
@@ -119,6 +119,8 @@ const SignUpEmailForm = () => {
         </div>
       </div>
     </div>
+  ) : (
+    <Redirect to="/" />
   );
 };
 

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Switch, Route } from "react-router-dom";
 import Mainlanding from "../components/Mainlanding/Mainlanding";
 import Navbarwrapper from "../components/Navbar/Navbarwrapper";
-// import Footerwrapper from "../components/Footer/Footerwrapper";
+import Footerwrapper from "../components/Footer/Footerwrapper";
 import Afterloginnavbar from "../components/Navbar/Afterloginnavbar";
 import GroupAndEvent from "../components/groupsandevents/GroupAndEvent";
 
@@ -16,8 +16,9 @@ import PaymentPage from "../components/Pages/EventCreation/PaymentPage";
 import { Login } from "../components/Pages/Login/Login";
 import { Signup } from "../components/Pages/SignUp/Signup";
 import { SignupFill } from "../components/Pages/SignUp/SignupFill";
-// import MyProfile from "../components/profile/MyProfile";
+import MyProfile from "../components/profile/MyProfile";
 import { AuthContext } from "../Context/AuthContextProvider";
+import DetailsPage from "../components/DescriptonPage/DetailsPage";
 
 export default function Routes() {
   const { token } = useContext(AuthContext);
@@ -28,6 +29,7 @@ export default function Routes() {
         <Route path="/" exact>
           {token === "" ? <Navbarwrapper /> : <Afterloginnavbar />}
           <Mainlanding />
+          <Footerwrapper />
         </Route>
         <Route path="/login">
           <Login />
@@ -60,12 +62,18 @@ export default function Routes() {
           <PaymentPage />
         </Route>
         <Route path="/groupAndEvnet">
+          {token === "" ? <Navbarwrapper /> : <Afterloginnavbar />}
           <GroupAndEvent />
+          <Footerwrapper />
         </Route>
-        {/* <Route path="/profile">
+        <Route path="/detailsPage">
+          {token === "" ? <Navbarwrapper /> : <Afterloginnavbar />}
+          <DetailsPage />
+        </Route>
+        <Route path="/profile">
           {token === "" ? <Navbarwrapper /> : <Afterloginnavbar />}
           <MyProfile />
-        </Route> */}
+        </Route>
       </Switch>
       {/* <Footerwrapper /> */}
     </div>

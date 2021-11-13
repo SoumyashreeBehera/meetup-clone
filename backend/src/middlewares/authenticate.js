@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 
 const verifyToken = (token) => {
   return new Promise((resolve, reject) => {
-    jwt.verify(token, process.env.JWT_SECRET_KEY, function (err, user) {
+    jwt.verify(token, "som", function (err, user) {
       if (err) return reject(err);
       return resolve(user);
     });
@@ -16,22 +16,18 @@ const authenticate = async (req, res, next) => {
   let bearerToken = req?.headers?.authorization;
 
   if (!bearerToken) {
-    return res
-      .status(401)
-      .json({
-        status: "error",
-        message: "you did not send the authorization header1 ",
-      });
+    return res.status(401).json({
+      status: "error",
+      message: "you did not send the authorization header1 ",
+    });
   }
 
   //check if authorization header has a barer token and if not throw an error
   if (!bearerToken.startsWith("Bearer ")) {
-    return res
-      .status(401)
-      .json({
-        status: "error",
-        message: "you did not send the authorization Bearer ",
-      });
+    return res.status(401).json({
+      status: "error",
+      message: "you did not send the authorization Bearer ",
+    });
   }
 
   //extract the token from the bearer token

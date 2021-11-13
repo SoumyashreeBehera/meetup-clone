@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import styles from "./MyProfile.module.css";
+import { AuthContext } from "../../Context/AuthContextProvider";
+import { Redirect } from "react-router";
 export default function MyProfile() {
-  return (
+  const { user, token } = useContext(AuthContext);
+
+  useEffect(() => {
+    console.log(user.profile_pic);
+  }, []);
+
+  return token === "" ? (
+    <Redirect to="/" />
+  ) : (
     <div className={styles.profile_root}>
       <div className={styles.mydetails_container}>
         <div className={styles.image_container}>
-          <img src="https://mahipal.vercel.app/images/portfoliopic.jpg"></img>
+          <img
+            src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png"
+            alt="profileImage"
+          ></img>
         </div>
         <div className={styles.my_details}>
-          <h1>Mahipal Jat</h1>
+          <h1>{user.username}</h1>
           <span>Member since November 2021</span>
           <div className={styles.loc_even}>
             <div>
@@ -20,7 +33,7 @@ export default function MyProfile() {
               >
                 <path d="M9 17.5C5 13.5 3 10 3 7a6 6 0 1112 0c0 3-2 6.5-6 10.5zm0-8a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
               </svg>{" "}
-              <span>New York</span>
+              <span>{user.location}</span>
             </div>
             <div>
               <svg
